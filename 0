@@ -1,0 +1,39 @@
+
+
+docker-compose -f docker-compose.yml -f docker-compose.override.yml up
+
+docker images 
+
+docker inspect c07b136da935
+
+docker system df
+
+docker system df -v
+
+docker pull tutum/wordpress
+docker pull tutum/wordpress:latest
+
+docker run -d -p 8080:80 tutum/wordpress
+docker run -d -p 9090:80 tutum/wordpress
+
+docker ps
+docker ps --all
+
+docker search microsoft/aspnet
+
+docker search nginx:stable-alpina
+
+https://hub.docker.com/
+https://hub.docker.com/search/?isAutomated=0&isOfficial=0&page=1&pullCount=0&q=microsoft&starCount=0
+https://hub.docker.com/r/microsoft/mssql-server-windows-express/
+
+docker build -t nodejs .
+
+http://localhost:8090/   -- Hello NodeJs
+
+docker images
+docker tag 786575 mynodejs:v1
+
+docker build -t myimage:v1
+
+
