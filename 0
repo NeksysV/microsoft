@@ -37,3 +37,59 @@ docker tag 786575 mynodejs:v1
 docker build -t myimage:v1
 
 
+
+docker network ls
+
+PS C:\Users\admin\Desktop\Alfa\Alfa\Labs\labs\module1\aspnetcore> docker network ls
+NETWORK ID          NAME                                        DRIVER              SCOPE
+581bf7fd60e0        bridge                                      bridge              local
+56b816dcc69d        dockercompose17316892740768144171_default   bridge              local
+f70dfd8ee6cb        dockercompose18307605796376544542_default   bridge              local
+2ddf1928fb2c        eshoponcontainers_default                   bridge              local
+5ba7095dcc93        host                                        host                local
+0010b48303ee        none                                        null                local
+
+PS C:\Users\admin\Desktop\Alfa\Alfa\Labs\labs\module1\aspnetcore> docker inspect 581bf7fd60e0
+[
+    {
+        "Name": "bridge",
+        "Id": "581bf7fd60e0645ba8381ba476af4adb6a24b6dbad0a4b56b377f0549bf99cea",
+        "Created": "2017-09-13T07:34:26.0990445Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "172.17.0.0/16",
+                    "Gateway": "172.17.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {},
+        "Options": {
+            "com.docker.network.bridge.default_bridge": "true",
+            "com.docker.network.bridge.enable_icc": "true",
+            "com.docker.network.bridge.enable_ip_masquerade": "true",
+            "com.docker.network.bridge.host_binding_ipv4": "0.0.0.0",
+            "com.docker.network.bridge.name": "docker0",
+            "com.docker.network.driver.mtu": "1500"
+        },
+        "Labels": {}
+    }
+]
+PS C:\Users\admin\Desktop\Alfa\Alfa\Labs\labs\module1\aspnetcore>
+
+
+
+
+
