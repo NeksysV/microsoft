@@ -1,5 +1,9 @@
 
 
+https://notepad-plus-plus.org/
+https://notepad-plus-plus.org/download/v7.5.1.html
+
+
 C:\Users\admin\Desktop\eShopOnContainers> docker-compose -f docker-compose.yml -f docker-compose.override.yml up
 
 docker-compose -f docker-compose.yml -f docker-compose.override.yml up
